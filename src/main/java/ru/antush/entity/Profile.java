@@ -7,7 +7,6 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
 @Builder
 @Entity
 public class Profile {

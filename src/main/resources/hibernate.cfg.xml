@@ -20,6 +20,5 @@
         <mapping class="ru.antush.entity.Chat"/>
         <mapping class="ru.antush.entity.UserChat"/>
         <mapping class="ru.antush.entity.Payment"/>
-<!--        <mapping class="ru.antush.entity.Audit"/>-->
     </session-factory>
 </hibernate-configuration>

@@ -1,6 +1,5 @@
 package ru.antush.entity;
 
-import jdk.dynalink.Operation;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
