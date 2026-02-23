@@ -11,10 +11,6 @@ import ru.antush.dto.PaymentFilter;
 import ru.antush.entity.Payment;
 import ru.antush.entity.User;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Join;
-import javax.persistence.criteria.Root;
 import java.util.List;
 
 import static ru.antush.entity.QCompany.company;
@@ -92,6 +88,7 @@ public class UserDao {
 //                .list();
 
         return new JPAQuery<User>(session)
+                .select(user)
                 .from(user)
                 .orderBy(user.personalInfo.birthDate.asc())
                 .limit(limit)

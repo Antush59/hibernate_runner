@@ -58,6 +58,8 @@ public class TestDataImporter {
         addToChat(session, antush, billGates, steveJobs, sergeyBrin);
         addToChat(session, java, billGates, steveJobs, timCook, dianeGreene);
         addToChat(session, youtubeMembers, billGates, steveJobs, timCook, dianeGreene);
+
+        session.getTransaction().commit();
     }
 
     private void addToChat(Session session, Chat chat, User... users) {

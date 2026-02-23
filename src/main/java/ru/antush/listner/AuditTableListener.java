@@ -25,7 +25,6 @@ public class AuditTableListener implements PreDeleteEventListener, PreInsertEven
                     .entityContent(event.getEntity().toString())
                     .operation(operation)
                     .build();
-
             event.getSession().save(audit);
         }
     }
