@@ -11,6 +11,7 @@ import org.hibernate.event.spi.EventType;
 import org.hibernate.internal.SessionFactoryImpl;
 import ru.antush.convertor.BirthdayConverter;
 import ru.antush.entity.Audit;
+import ru.antush.entity.Revision;
 import ru.antush.entity.User;
 import ru.antush.interceptor.GlobalInterceptor;
 import ru.antush.listner.AuditTableListener;
@@ -42,6 +43,7 @@ public class HibernateUtil {
         configuration.setPhysicalNamingStrategy(new CamelCaseToUnderscoresNamingStrategy());
         configuration.addAnnotatedClass(User.class);
         configuration.addAnnotatedClass(Audit.class);
+        configuration.addAnnotatedClass(Revision.class);
         configuration.addAttributeConverter(new BirthdayConverter());
         configuration.registerTypeOverride(new JsonBinaryType());
         configuration.setInterceptor(new GlobalInterceptor());
