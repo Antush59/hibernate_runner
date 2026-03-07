@@ -2,14 +2,15 @@ package ru.antush.entity;
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import lombok.*;
-import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.FetchProfile;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.TypeDef;
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,6 +49,7 @@ import static ru.antush.util.StringUtils.SPACE;
 @Table(name = "users", schema = "public")
 @TypeDef(name = "antush", typeClass = JsonBinaryType.class)
 @Audited
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "User")
 public class User implements Comparable<User>, BaseEntity<Long> {
 
     @Id
@@ -81,6 +83,7 @@ public class User implements Comparable<User>, BaseEntity<Long> {
     @NotAudited
     @Builder.Default
     @OneToMany(mappedBy = "user")
+    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     private List<UserChat> userChats = new ArrayList<>();
 
     @NotAudited
