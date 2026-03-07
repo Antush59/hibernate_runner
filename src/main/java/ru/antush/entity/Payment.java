@@ -1,6 +1,8 @@
 package ru.antush.entity;
 
 import lombok.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.NotAudited;
 
@@ -14,6 +16,7 @@ import javax.persistence.*;
 //@OptimisticLocking(type = OptimisticLockType.DIRTY)
 //@DynamicUpdate
 @Audited
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class Payment extends AuditableEntity<Long> {
 
     @Id
