@@ -15139,3 +15139,288 @@ https://vladmihalcea.com/hypersistence-optimizer/
 [2026-03-14 17:50:52,874] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
 [2026-03-14 17:50:52,876] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
 [2026-03-14 17:50:52,876] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.
+[2026-03-22 14:01:32,977] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.5.7.Final
+[2026-03-22 14:01:33,148] INFO [Hibernate Types: 283] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[2026-03-22 14:01:33,515] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2026-03-22 14:01:33,632] WARN [org.hibernate.orm.connections.pooling: 72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2026-03-22 14:01:33,638] INFO [org.hibernate.orm.connections.pooling: 115] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:01:33,638] INFO [org.hibernate.orm.connections.pooling: 124] HHH10001001: Connection properties: {password=****, user=postgres}
+[2026-03-22 14:01:33,638] INFO [org.hibernate.orm.connections.pooling: 129] HHH10001003: Autocommit mode: false
+[2026-03-22 14:01:33,640] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2026-03-22 14:01:33,814] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2026-03-22 14:01:33,862] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 88] Envers integration enabled? : true
+[2026-03-22 14:01:34,735] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Companies' created in EhcacheManager.
+[2026-03-22 14:01:34,736] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Users' created in EhcacheManager.
+[2026-03-22 14:01:34,799] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Companies
+[2026-03-22 14:01:34,800] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Users
+[2026-03-22 14:01:34,804] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:34,810] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2026-03-22 14:01:34,814] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:34,816] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2026-03-22 14:01:34,846] INFO [org.hibernate.validator.internal.util.Version: 21] HV000001: Hibernate Validator 6.0.22.Final
+[2026-03-22 14:01:35,048] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:35,050] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2026-03-22 14:01:35,051] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:35,052] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.Payment' created in EhcacheManager.
+[2026-03-22 14:01:35,053] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.User.userChats] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:35,055] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.User.userChats' created in EhcacheManager.
+[2026-03-22 14:01:35,057] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:01:35,059] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.UserChat' created in EhcacheManager.
+[2026-03-22 14:01:35,408] INFO [org.hibernate.orm.connections.access: 48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@25e6c22a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2026-03-22 14:01:35,803] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'User' removed from EhcacheManager.
+[2026-03-22 14:01:35,803] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-query-results-region' removed from EhcacheManager.
+[2026-03-22 14:01:35,804] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.UserChat' removed from EhcacheManager.
+[2026-03-22 14:01:35,804] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Companies' removed from EhcacheManager.
+[2026-03-22 14:01:35,804] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.Payment' removed from EhcacheManager.
+[2026-03-22 14:01:35,804] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.User.userChats' removed from EhcacheManager.
+[2026-03-22 14:01:35,805] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:01:35,807] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
+[2026-03-22 14:01:35,807] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.
+[2026-03-22 14:09:46,529] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.5.7.Final
+[2026-03-22 14:09:46,659] INFO [Hibernate Types: 283] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[2026-03-22 14:09:46,977] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2026-03-22 14:09:47,090] WARN [org.hibernate.orm.connections.pooling: 72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2026-03-22 14:09:47,094] INFO [org.hibernate.orm.connections.pooling: 115] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:09:47,094] INFO [org.hibernate.orm.connections.pooling: 124] HHH10001001: Connection properties: {password=****, user=postgres}
+[2026-03-22 14:09:47,094] INFO [org.hibernate.orm.connections.pooling: 129] HHH10001003: Autocommit mode: false
+[2026-03-22 14:09:47,095] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2026-03-22 14:09:47,247] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2026-03-22 14:09:47,288] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 88] Envers integration enabled? : true
+[2026-03-22 14:09:48,169] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Companies' created in EhcacheManager.
+[2026-03-22 14:09:48,171] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Users' created in EhcacheManager.
+[2026-03-22 14:09:48,223] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Companies
+[2026-03-22 14:09:48,224] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Users
+[2026-03-22 14:09:48,227] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,232] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2026-03-22 14:09:48,234] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,237] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2026-03-22 14:09:48,261] INFO [org.hibernate.validator.internal.util.Version: 21] HV000001: Hibernate Validator 6.0.22.Final
+[2026-03-22 14:09:48,458] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,459] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2026-03-22 14:09:48,463] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.User.userChats] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,464] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.User.userChats' created in EhcacheManager.
+[2026-03-22 14:09:48,465] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,467] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.Payment' created in EhcacheManager.
+[2026-03-22 14:09:48,469] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:09:48,471] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.UserChat' created in EhcacheManager.
+[2026-03-22 14:09:48,810] INFO [org.hibernate.orm.connections.access: 48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6906be0f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2026-03-22 14:09:49,165] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'User' removed from EhcacheManager.
+[2026-03-22 14:09:49,166] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-query-results-region' removed from EhcacheManager.
+[2026-03-22 14:09:49,167] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.UserChat' removed from EhcacheManager.
+[2026-03-22 14:09:49,167] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Companies' removed from EhcacheManager.
+[2026-03-22 14:09:49,167] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.Payment' removed from EhcacheManager.
+[2026-03-22 14:09:49,167] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.User.userChats' removed from EhcacheManager.
+[2026-03-22 14:09:49,168] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:09:49,170] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
+[2026-03-22 14:09:49,170] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.
+[2026-03-22 14:10:55,661] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.5.7.Final
+[2026-03-22 14:10:55,795] INFO [Hibernate Types: 283] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[2026-03-22 14:10:56,086] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2026-03-22 14:10:56,197] WARN [org.hibernate.orm.connections.pooling: 72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2026-03-22 14:10:56,200] INFO [org.hibernate.orm.connections.pooling: 115] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:10:56,201] INFO [org.hibernate.orm.connections.pooling: 124] HHH10001001: Connection properties: {password=****, user=postgres}
+[2026-03-22 14:10:56,201] INFO [org.hibernate.orm.connections.pooling: 129] HHH10001003: Autocommit mode: false
+[2026-03-22 14:10:56,203] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2026-03-22 14:10:56,331] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2026-03-22 14:10:56,374] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 88] Envers integration enabled? : true
+[2026-03-22 14:10:57,237] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Companies' created in EhcacheManager.
+[2026-03-22 14:10:57,238] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Users' created in EhcacheManager.
+[2026-03-22 14:10:57,293] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Companies
+[2026-03-22 14:10:57,295] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Users
+[2026-03-22 14:10:57,298] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,303] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2026-03-22 14:10:57,305] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,307] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2026-03-22 14:10:57,333] INFO [org.hibernate.validator.internal.util.Version: 21] HV000001: Hibernate Validator 6.0.22.Final
+[2026-03-22 14:10:57,518] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,519] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2026-03-22 14:10:57,520] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,523] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.UserChat' created in EhcacheManager.
+[2026-03-22 14:10:57,524] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,526] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.Payment' created in EhcacheManager.
+[2026-03-22 14:10:57,528] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.User.userChats] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:10:57,530] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.User.userChats' created in EhcacheManager.
+[2026-03-22 14:10:57,866] INFO [org.hibernate.orm.connections.access: 48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5e8f0f98] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2026-03-22 14:10:58,220] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'User' removed from EhcacheManager.
+[2026-03-22 14:10:58,221] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-query-results-region' removed from EhcacheManager.
+[2026-03-22 14:10:58,221] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.UserChat' removed from EhcacheManager.
+[2026-03-22 14:10:58,222] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Companies' removed from EhcacheManager.
+[2026-03-22 14:10:58,222] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.Payment' removed from EhcacheManager.
+[2026-03-22 14:10:58,222] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.User.userChats' removed from EhcacheManager.
+[2026-03-22 14:10:58,223] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:10:58,224] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
+[2026-03-22 14:10:58,225] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.
+[2026-03-22 14:14:12,732] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.5.7.Final
+[2026-03-22 14:14:12,871] INFO [Hibernate Types: 283] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[2026-03-22 14:14:13,161] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2026-03-22 14:14:13,272] WARN [org.hibernate.orm.connections.pooling: 72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2026-03-22 14:14:13,275] INFO [org.hibernate.orm.connections.pooling: 115] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:14:13,275] INFO [org.hibernate.orm.connections.pooling: 124] HHH10001001: Connection properties: {password=****, user=postgres}
+[2026-03-22 14:14:13,276] INFO [org.hibernate.orm.connections.pooling: 129] HHH10001003: Autocommit mode: false
+[2026-03-22 14:14:13,278] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2026-03-22 14:14:13,402] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2026-03-22 14:14:13,445] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 88] Envers integration enabled? : true
+[2026-03-22 14:14:14,404] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Companies' created in EhcacheManager.
+[2026-03-22 14:14:14,407] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Users' created in EhcacheManager.
+[2026-03-22 14:14:14,469] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Companies
+[2026-03-22 14:14:14,470] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Users
+[2026-03-22 14:14:14,475] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,483] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2026-03-22 14:14:14,486] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,488] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2026-03-22 14:14:14,526] INFO [org.hibernate.validator.internal.util.Version: 21] HV000001: Hibernate Validator 6.0.22.Final
+[2026-03-22 14:14:14,787] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,788] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2026-03-22 14:14:14,793] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,795] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.UserChat' created in EhcacheManager.
+[2026-03-22 14:14:14,795] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,797] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.Payment' created in EhcacheManager.
+[2026-03-22 14:14:14,798] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.User.userChats] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:14:14,800] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.User.userChats' created in EhcacheManager.
+[2026-03-22 14:14:15,130] INFO [org.hibernate.orm.connections.access: 48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10a0a1e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2026-03-22 14:14:15,520] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'User' removed from EhcacheManager.
+[2026-03-22 14:14:15,520] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-query-results-region' removed from EhcacheManager.
+[2026-03-22 14:14:15,521] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.UserChat' removed from EhcacheManager.
+[2026-03-22 14:14:15,521] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Companies' removed from EhcacheManager.
+[2026-03-22 14:14:15,521] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.Payment' removed from EhcacheManager.
+[2026-03-22 14:14:15,521] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.User.userChats' removed from EhcacheManager.
+[2026-03-22 14:14:15,522] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:14:15,524] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
+[2026-03-22 14:14:15,524] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.
+[2026-03-22 14:18:57,746] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.5.7.Final
+[2026-03-22 14:18:57,882] INFO [Hibernate Types: 283] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[2026-03-22 14:18:58,177] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2026-03-22 14:18:58,290] WARN [org.hibernate.orm.connections.pooling: 72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2026-03-22 14:18:58,294] INFO [org.hibernate.orm.connections.pooling: 115] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:18:58,295] INFO [org.hibernate.orm.connections.pooling: 124] HHH10001001: Connection properties: {password=****, user=postgres}
+[2026-03-22 14:18:58,295] INFO [org.hibernate.orm.connections.pooling: 129] HHH10001003: Autocommit mode: false
+[2026-03-22 14:18:58,297] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2026-03-22 14:18:58,425] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2026-03-22 14:18:58,460] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 88] Envers integration enabled? : true
+[2026-03-22 14:18:59,275] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Companies' created in EhcacheManager.
+[2026-03-22 14:18:59,277] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'Users' created in EhcacheManager.
+[2026-03-22 14:18:59,329] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Companies
+[2026-03-22 14:18:59,330] INFO [org.ehcache.jsr107.Eh107CacheManager: 389] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Anton/IdeaProjects/hibernate-starter/build/resources/main/ehcache-config.xml,Cache=Users
+[2026-03-22 14:18:59,333] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,337] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2026-03-22 14:18:59,339] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,341] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2026-03-22 14:18:59,365] INFO [org.hibernate.validator.internal.util.Version: 21] HV000001: Hibernate Validator 6.0.22.Final
+[2026-03-22 14:18:59,536] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,538] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.UserChat' created in EhcacheManager.
+[2026-03-22 14:18:59,542] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.User.userChats] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,543] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.User.userChats' created in EhcacheManager.
+[2026-03-22 14:18:59,545] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[ru.antush.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,547] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'ru.antush.entity.Payment' created in EhcacheManager.
+[2026-03-22 14:18:59,549] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2026-03-22 14:18:59,551] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2026-03-22 14:18:59,861] INFO [org.hibernate.orm.connections.access: 48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10d905c1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2026-03-22 14:19:00,214] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'User' removed from EhcacheManager.
+[2026-03-22 14:19:00,214] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-query-results-region' removed from EhcacheManager.
+[2026-03-22 14:19:00,215] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.UserChat' removed from EhcacheManager.
+[2026-03-22 14:19:00,215] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Companies' removed from EhcacheManager.
+[2026-03-22 14:19:00,216] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.Payment' removed from EhcacheManager.
+[2026-03-22 14:19:00,216] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'ru.antush.entity.User.userChats' removed from EhcacheManager.
+[2026-03-22 14:19:00,217] INFO [org.hibernate.orm.connections.pooling: 502] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2026-03-22 14:19:00,219] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'default-update-timestamps-region' removed from EhcacheManager.
+[2026-03-22 14:19:00,219] INFO [org.ehcache.core.EhcacheManager: 216] Cache 'Users' removed from EhcacheManager.

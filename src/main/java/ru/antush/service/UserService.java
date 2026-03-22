@@ -9,10 +9,15 @@ import ru.antush.entity.User;
 import ru.antush.mapper.Mapper;
 import ru.antush.mapper.UserCreatMapper;
 import ru.antush.mapper.UserReadMapper;
+import ru.antush.validate.UpdateCheck;
 
 import javax.transaction.Transactional;
+import javax.validation.*;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
+
+import static javax.validation.Validation.buildDefaultValidatorFactory;
 
 @RequiredArgsConstructor
 public class UserService {
@@ -24,6 +29,12 @@ public class UserService {
     @Transactional
     public Long creat(UserCreatDto userDto) {
         // validation
+        ValidatorFactory validatorFactory = buildDefaultValidatorFactory();
+        Validator validator = validatorFactory.getValidator();
+        Set<ConstraintViolation<UserCreatDto>> validationResult = validator.validate(userDto, UpdateCheck.class);
+        if (!validationResult.isEmpty()) {
+            throw new ConstraintViolationException(validationResult);
+        }
 
         User userEntity = userCreatMapper.mapFrom(userDto);
 
