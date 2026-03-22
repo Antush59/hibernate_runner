@@ -17,6 +17,12 @@ import java.util.List;
 import static ru.antush.util.StringUtils.SPACE;
 
 @NamedEntityGraph(
+        name = "WithCompany",
+        attributeNodes = {
+                @NamedAttributeNode("company")
+        }
+)
+@NamedEntityGraph(
         name = "WithCompanyAndChat",
         attributeNodes = {
                 @NamedAttributeNode("company"),

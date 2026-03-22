@@ -1,67 +1,84 @@
 package ru.antush;
 
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.ReplicationMode;
+import net.bytebuddy.ByteBuddy;
+import net.bytebuddy.implementation.MethodDelegation;
+import net.bytebuddy.matcher.ElementMatchers;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.envers.AuditReader;
-import org.hibernate.envers.AuditReaderFactory;
-import org.hibernate.envers.query.AuditEntity;
-import ru.antush.entity.Payment;
+import ru.antush.dao.CompanyRepository;
+import ru.antush.dao.PaymentRepository;
+import ru.antush.dao.UserRepository;
+import ru.antush.dto.UserCreatDto;
+import ru.antush.entity.PersonalInfo;
+import ru.antush.entity.Role;
 import ru.antush.entity.User;
-import ru.antush.interceptor.GlobalInterceptor;
+import ru.antush.interceptor.TransactionInterceptor;
+import ru.antush.mapper.CompanyReadMapper;
+import ru.antush.mapper.UserCreatMapper;
+import ru.antush.mapper.UserReadMapper;
+import ru.antush.service.UserService;
 import ru.antush.util.HibernateUtil;
-import ru.antush.util.TestDataImporter;
 
 import javax.transaction.Transactional;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Proxy;
 import java.sql.SQLException;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 
 @Slf4j
 public class HibernateRunner {
 
     @Transactional
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, NoSuchMethodException, InvocationTargetException,
+            InstantiationException, IllegalAccessException {
 
         try (SessionFactory sessionFactory = HibernateUtil.buildSessionFactory()) {
-            //             TestDataImporter.importData(sessionFactory);
-            User user = null;
-            try (Session session = sessionFactory.openSession()) {
-                session.beginTransaction();
 
-                user = session.find(User.class, 1L);
-                user.getCompany().getName();
-                user.getUserChats().size();
-                User user1 = session.find(User.class, 1L);
+            Session session = (Session) Proxy.newProxyInstance(SessionFactory.class.getClassLoader(), new Class[]{Session.class},
+                    (proxy, method, args1) -> method.invoke(sessionFactory.getCurrentSession(), args1));
 
-                List<Payment> payments = session.createQuery("select p from Payment p where p.receiver.id = :userId", Payment.class)
-                        .setParameter("userId", 1L)
-                        .setCacheable(true)
-//                        .setCacheRegion("queries")
-                        .getResultList();
+//            session.beginTransaction();
 
-                System.out.println(sessionFactory.getStatistics().getCacheRegionStatistics("Users"));
+            CompanyRepository companyRepository = new CompanyRepository(session);
 
-                session.getTransaction().commit();
-            }
-            try (Session session2 = sessionFactory.openSession()) {
-                session2.beginTransaction();
+            CompanyReadMapper companyReadMapper = new CompanyReadMapper();
+            UserReadMapper userReadMapper = new UserReadMapper(companyReadMapper);
+            UserCreatMapper userCreatMapper = new UserCreatMapper(companyRepository);
 
-                User user2 = session2.find(User.class, 1L);
-                user2.getCompany().getName();
-                user2.getUserChats().size();
+            UserRepository userRepository = new UserRepository(session);
+            PaymentRepository paymentRepository = new PaymentRepository(session);
+//            UserService userService = new UserService(userRepository, userReadMapper, userCreatMapper);
+            TransactionInterceptor transactionInterceptor = new TransactionInterceptor(sessionFactory);
 
-                List<Payment> payments = session2.createQuery("select p from Payment p where p.receiver.id = :userId", Payment.class)
-                        .setParameter("userId", 1L)
-                        .setCacheable(true)
-//                        .setCacheRegion("queries")
-                        .getResultList();
+            UserService userService = new ByteBuddy()
+                    .subclass(UserService.class)
+                    .method(ElementMatchers.any())
+                    .intercept(MethodDelegation.to(transactionInterceptor))
+                    .make()
+                    .load(UserService.class.getClassLoader())
+                    .getLoaded()
+                    .getDeclaredConstructor(UserRepository.class, UserReadMapper.class, UserCreatMapper.class)
+                    .newInstance(userRepository, userReadMapper, userCreatMapper);
 
-                System.out.println(sessionFactory.getStatistics().getCacheRegionStatistics("Users"));
+            userService.findById(1L).ifPresent(System.out::println);
 
-                session2.getTransaction().commit();
-            }
+            UserCreatDto userCreatDto = new UserCreatDto(
+                    PersonalInfo.builder()
+                            .firstname("Liza")
+                            .lastname("Stepanova")
+                            .birthDate(LocalDate.now())
+                            .build(),
+                    "liza2@gmail.com",
+                    null,
+                    Role.USER,
+                    1
+            );
+            userService.creat(userCreatDto);
+
+//            session.getTransaction().commit();
+
+
         }
     }
 }
